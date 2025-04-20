@@ -1,0 +1,10 @@
+/* static/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#sequencer {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #000;
+}
