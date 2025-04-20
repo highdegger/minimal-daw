@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimal DAW</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+    <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
 </head>
 <body>
-    <h1>Minimal DAW</h1>
-    <div id="sequencer"></div>
+    <div id="daw-container">
+        <h1>Minimal DAW</h1>
+        <div id="piano-roll">
+            <canvas id="sequencer-canvas"></canvas>
+            <div id="controls">
+                <button onclick="startPlayback()">Play</button>
+                <button onclick="stopPlayback()">Stop</button>
+                <input type="file" id="sample-upload" accept=".wav,.mp3">
+            </div>
+        </div>
+    </div>
     <script src="/static/js/main.js"></script>
 </body>
 </html>
